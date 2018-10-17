@@ -53,10 +53,10 @@
       <figure class="slide"><img src="img/002.jpg"></figure>
       <figure class="slide"><img src="img/003.jpg"></figure>
       <figure class="slide"><img src="img/004.jpg"></figure>
-<!--       <figure class="slide"><img src="img/005.jpg"></figure>
- -->      <figure class="slide"><img src="img/006.jpg"></figure>
+      <figure class="slide"><img src="img/005.jpg"></figure>
+      <figure class="slide"><img src="img/006.jpg"></figure>
 <!--       <figure class="slide"><img src="img/007.jpg"></figure>
- -->      <figure class="slide"><img src="img/008.jpg"></figure>
+ -->  
     </div>
   </section>
   <script>
@@ -82,10 +82,10 @@
       if (slideIndex > slides.length) {
         slideIndex = 1
       } 
-      if (slideIndex == 2 || slideIndex == 4) {
+      if (slideIndex >= 1 && slideIndex <= 4) {
           t=25000;
         }
-        else if (slideIndex == 1 || slideIndex == 3 || slideIndex == 6) {
+        else if (slideIndex == 6) {
           t=10000;
         }
         else if (slideIndex == 5) {
