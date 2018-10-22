@@ -55,8 +55,8 @@
       <figure class="slide"><img src="img/004.jpg"></figure>
       <figure class="slide"><img src="img/005.jpg"></figure>
       <figure class="slide"><img src="img/006.jpg"></figure>
-<!--       <figure class="slide"><img src="img/007.jpg"></figure>
- -->  
+      <figure class="slide"><img src="img/007.jpg"></figure>
+ 
     </div>
   </section>
   <script>
@@ -119,7 +119,11 @@
     },10, limit);
 
     }
-    
+   function timedRefresh(timeoutPeriod) {
+     setTimeout("location.reload(true);",timeoutPeriod);
+    }
+
+    window.onload = timedRefresh(1800000);
   </script>
   <script>
     
