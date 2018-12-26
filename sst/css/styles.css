@@ -1,0 +1,80 @@
+.container-fluid.containerStopers {
+  padding: 15px 20px; }
+  .container-fluid.containerStopers h1 {
+    color: #003e9c;
+    display: inline-block;
+    font-weight: normal; }
+  .container-fluid.containerStopers figure.nokiaLogo {
+    float: right;
+    margin: 0;
+    padding-top: 10px;
+    width: 180px; }
+    .container-fluid.containerStopers figure.nokiaLogo img {
+      width: 100%; }
+.container-fluid .breadcrumbStopers {
+  background-color: #f3f3f3;
+  border-radius: 5px;
+  display: block;
+  margin-top: 10px;
+  overflow: hidden;
+  padding: 10px; }
+  .container-fluid .breadcrumbStopers span {
+    color: #a0a0a0; }
+    .container-fluid .breadcrumbStopers span#span1 {
+      float: left; }
+    .container-fluid .breadcrumbStopers span#span2 {
+      float: right; }
+.container-fluid .chartContainer {
+  border: 1px solid #ced4da;
+  height: 300px;
+  margin-top: 20px;
+  overflow: hidden; }
+  .container-fluid .chartContainer h6 {
+    color: #828282;
+    font-weight: normal;
+    padding: 5px 10px; }
+.container-fluid form .form-row.stopersFilters {
+  margin-top: 20px; }
+.container-fluid form .form-row .custom-checkbox {
+  margin-top: 35px; }
+.container-fluid .stopersTableContainer {
+  overflow-x: scroll;
+  width: 100%; }
+  .container-fluid .stopersTableContainer .stopersTable {
+    margin-top: 20px; }
+    .container-fluid .stopersTableContainer .stopersTable tr th {
+      font-size: 10px; }
+      .container-fluid .stopersTableContainer .stopersTable tr th span.rotate {
+        /* FF3.5+ */
+        -moz-transform: rotate(-90deg);
+        /* Opera 10.5 */
+        -o-transform: rotate(-90deg);
+        /* Saf3.1+, Chrome */
+        -webkit-transform: rotate(-90deg);
+        /* IE8 */
+        -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0.083)";
+        /* Standard */
+        transform: rotate(-90deg);
+        display: block;
+        margin: 0 auto; }
+    .container-fluid .stopersTableContainer .stopersTable tr.bg-primary {
+      background-color: #003e9c !important;
+      color: white; }
+    .container-fluid .stopersTableContainer .stopersTable tr.bg-info {
+      background-color: #4b7cd0 !important;
+      color: white; }
+    .container-fluid .stopersTableContainer .stopersTable tr.totals {
+      background: #324669;
+      font-weight: bold; }
+      .container-fluid .stopersTableContainer .stopersTable tr.totals td {
+        color: white; }
+    .container-fluid .stopersTableContainer .stopersTable td {
+      color: #5a5a5a;
+      font-size: 13px;
+      height: 30px;
+      overflow: hidden;
+      text-align: center; }
+      .container-fluid .stopersTableContainer .stopersTable td.totals {
+        font-weight: bold; }
+
+/*# sourceMappingURL=styles.css.map */
