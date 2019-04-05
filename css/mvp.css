@@ -1,0 +1,21 @@
+.sprintContainer .teamMembers {
+  display: flex;
+  justify-content: start;
+  margin-top: 10px;
+  width: 100%; }
+  .sprintContainer .teamMembers figure.teamMember {
+    display: inline-block;
+    padding: 0 3px;
+    width: 5em; }
+    .sprintContainer .teamMembers figure.teamMember img {
+      width: 100%; }
+    .sprintContainer .teamMembers figure.teamMember h6 {
+      font-family: 'carnaslight', Arial, Helvetica, Sans-Serif;
+      margin-top: 5px;
+      text-align: center; }
+.progress {
+  height: 4em;
+}
+  .progress .progress-bar{
+    font-size: 1.5em;
+  } 
