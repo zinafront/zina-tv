@@ -67,9 +67,9 @@
   <section class="zinaBroadcast">
     <div class="clockTimer"></div>
     <div id="slider">
-      <video class="slide" autoplay><source src="img/001.mp4" type="video/mp4"></video>
-<!--       <figure class="slide"><img src="img/002.jpg"></figure>
-      <figure class="slide"><img src="img/003.jpg"></figure> -->
+      <video class="slide" autoplay muted><source src="img/001.mp4" type="video/mp4"></video>
+      <figure class="slide"><img src="img/002.jpg"></figure>
+      <figure class="slide"><img src="img/003.jpg"></figure>
       <!-- <figure class="slide"><object style="width:100%; height:100vh; float: none; clear: both; margin: 2px auto;" data="https://www.youtube.com/embed/e8vg78A39qs?autoplay=1&mute=1&loop=1&playlist=e8vg78A39qs">
 </object>
   
@@ -147,7 +147,7 @@
      setTimeout("location.reload(true);",timeoutPeriod);
     }
 
-    // window.onload = timedRefresh(1800000);
+    window.onload = timedRefresh(25000);
   </script>
   <script>
     
