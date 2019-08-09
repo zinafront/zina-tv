@@ -67,7 +67,9 @@
   <section class="zinaBroadcast">
     <div class="clockTimer"></div>
     <div id="slider">
-      <figure class="slide"><img src="img/001.jpg"></figure>
+      <video class="slide" autoplay><source src="img/001.mp4" type="video/mp4"></video>
+<!--       <figure class="slide"><img src="img/002.jpg"></figure>
+      <figure class="slide"><img src="img/003.jpg"></figure> -->
       <!-- <figure class="slide"><object style="width:100%; height:100vh; float: none; clear: both; margin: 2px auto;" data="https://www.youtube.com/embed/e8vg78A39qs?autoplay=1&mute=1&loop=1&playlist=e8vg78A39qs">
 </object>
   
@@ -107,14 +109,11 @@
       if (slideIndex > slides.length) {
         slideIndex = 1
       } 
-      if (slideIndex >= 1 && slideIndex <= 6) {
-          t=3000;
+      if (slideIndex == 1) {
+          t=5000;
         }
-        // else if (slideIndex == 6) {
-        //   t=10000;
-        // }
-        else if (slideIndex == 7) {
-          t=3000;
+        else if (slideIndex == 2 || slideIndex == 3) {
+          t=10000;
         }
         else {
           t=3000;
