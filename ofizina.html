@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta property="og:title" content="ZINATeam's Dev Sprints Report"/>
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="img/mobile/preview.jpg"/>
+  <meta property="og:site_name" content="ZINATeam's Dev Sprints Report"/>
+  <meta property="og:description" content="Periodic report containing progress of sprints of each development team." />
+
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/mobile-ovr.css">
+  <link rel="stylesheet" href="css/mvp.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="js/circle-progress.min.js"></script>
+  <style>
+
+    body, figure {
+      margin: 0;
+      padding:0;
+      overflow: hidden;
+    }
+    .zinaBroadcast {
+      max-width:100vw;
+      width:100vw !important;
+      height:auto;
+      cursor: none;
+      position: relative;
+    }
+    .zinaBroadcast #slider{
+      width:100%;
+      height: auto;
+      overflow: hidden;
+    }
+    .zinaBroadcast #slider .slide {
+      display: none;
+    }
+    .zinaBroadcast #slider img{
+      width:100%;
+      height: auto;
+    }
+     .zinaBroadcast #slider img.active{
+      display: block;
+    }
+    .clockTimer {
+      position: absolute;
+      width: 6.5vw;
+      height: 6.5vw;
+      bottom: 0px;
+      right: 0px;
+    }
+    #slider{
+    	min-width: 100vw;
+    	min-height: 100vh;
+    	height: 100vh;
+    } 
+    .slide object {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    cursor:none;
+}
+  </style>
+  
+
+</head>
+<body>
+  <section class="zinaBroadcast">
+    <div class="clockTimer"></div>
+    <div id="slider">
+<!--       <video class="slide" autoplay muted><source src="img/zinatvid.mp4" type="video/mp4"></video>
+ --><!--       <figure class="slide"><img src="ofizina/000.jpg"></figure>
+ -->      <figure class="slide"><img src="ofizina/001.jpg"></figure>
+      <figure class="slide"><img src="ofizina/002.jpg"></figure>
+      <figure class="slide"><img src="ofizina/003.jpg"></figure>
+      <figure class="slide"><img src="ofizina/004.jpg"></figure>
+      <figure class="slide"><img src="ofizina/006.jpg"></figure>
+      <figure class="slide"><img src="ofizina/007.jpg"></figure>
+      <figure class="slide"><img src="ofizina/008.jpg"></figure>
+      <figure class="slide"><img src="ofizina/009.jpg"></figure>
+      <figure class="slide"><img src="ofizina/010.jpg"></figure>
+      <figure class="slide"><img src="ofizina/011.jpg"></figure>
+      <figure class="slide"><img src="ofizina/012.jpg"></figure>
+     <!--  <figure class="slide"><object style="width:100%; height:100vh; float: none; clear: both; margin: 2px auto;" data="https://www.youtube.com/embed/XKOT-5ea9PA?autoplay=1&mute=1&loop=1&playlist=XKOT-5ea9PA"></object></figure> -->
+<!--       <video class="slide" autoplay muted><source src="img/002.mp4" type="video/mp4"></video>
+ -->      <!-- 
+  
+<!--   <object style="width:100%; height:100vh; float: none; clear: both; margin: 2px auto;" data="https://www.youtube.com/embed/4z87ko9nhQc?autoplay=1&mute=1&loop=1&playlist=4z87ko9nhQc"></object> -->
+      <!-- <figure class="slide"><img src="img/002.jpg"></figure>
+      <article class="slide" style="height:100vh">
+        <h1>This is a public service announcement this is only a test</h1>
+        <figure style="width:15%; height: auto; margin: 0 auto;"><img src="https://pbs.twimg.com/media/D3ZMABPWkAAEAS7.jpg" alt=""></figure>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda praesentium in exercitationem laboriosam veritatis repudiandae aspernatur quae hic molestiae nisi! Laboriosam accusantium ratione pariatur repellendus! Similique quos, recusandae sunt laborum?</p>
+        <button class="btn btn-default">Send</button>
+      </article>
+      <figure class="slide"><img src="img/004.jpg"></figure>
+      <figure class="slide"><img src="img/005.jpg"></figure>
+      <figure class="slide"><img src="img/006.jpg"></figure>  -->
+    </div>
+  </section>
+  <script>
+    var slideIndex = 0;
+    var limit;
+
+    showSlides();
+
+
+
+    function showSlides(){
+      if(window.animation !== undefined){
+        window.clearInterval(window.animation);
+      }
+      var i;
+      var t;
+      var slides = document.getElementsByClassName('slide');
+      t=0;
+      for (i = 0; i < slides.length; i++){
+        slides[i].style.display = 'none';
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {
+        slideIndex = 1
+      }
+      document.getElementById('slider').addEventListener('click', function(){
+      	console.log("done");
+      }); 
+    //   if (slideIndex == 1) {
+    //       t=60000;
+    //     }
+    //     else if (slideIndex == 2) {
+    //       t=60000;
+    //     }
+    //     else {
+    //       t=60000;
+    //     }
+    //   slides[slideIndex-1].style.display = "block"; 
+    //   setTimeout(showSlides, t);
+    //   limit = t;
+
+    //   var timeCount =0;
+    //   limit = limit/10;
+    //   window.animation = setInterval(function(limit){
+    //   timeCount++;
+    //   var perc = 0;
+    //   perc = perc + timeCount/(limit-1);
+    //   // console.log(perc);
+     
+    //   if (perc<99){
+    //     $('.clockTimer').circleProgress({
+    //       value: perc,
+    //       size: 50,
+    //       fill: {gradient: ["#F6014D", "rgb(255,212,1)"]},
+    //       emptyFill: "rgba(127,127,127,0.25)",
+    //       animation: false,
+    //     });  
+    //   }
+
+    // },10, limit);
+
+    }
+   function timedRefresh(timeoutPeriod) {
+     setTimeout("location.reload(true);",timeoutPeriod);
+    }
+
+    window.onload = timedRefresh(24500);
+  </script>
+  <script>
+    
+  </script>
+</body>
+</html>
