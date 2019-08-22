@@ -53,12 +53,22 @@
       right: 0px;
     }
     .slide object {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    cursor:none;
-}
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      cursor:none;
+    }
+    #watermark {
+      position: absolute;
+      z-index: 1000;
+      width: 5vw;
+      height: 5vw;
+      overflow: hidden;
+      background: blue;
+      bottom: 5vh;
+      left: 2vw;
+    }
   </style>
   
 
@@ -71,8 +81,11 @@
 <!--       <figure class="slide"><img src="img/001.jpg"></figure>-->
       <figure class="slide"><img src="img/002.jpg"></figure>
       <figure class="slide"><img src="img/003.jpg"></figure>
-
+<div id="watermark">
+      <figure class="watermarkfig"><img src="img/watermark.png" alt=""></figure>
     </div>
+    </div>
+    
   </section>
   <script>
     var slideIndex = 0;
@@ -135,7 +148,7 @@
      setTimeout("location.reload(true);",timeoutPeriod);
     }
 
-    window.onload = timedRefresh(34500);
+    window.onload = timedRefresh(24750);
   </script>
   <script>
     
