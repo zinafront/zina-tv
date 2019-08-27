@@ -93,6 +93,7 @@
   <script>
     var slideIndex = 0;
     var limit;
+    var dt=0;
 
     showSlides();
 
@@ -111,28 +112,20 @@
       }
       slideIndex++;
       if (slideIndex > slides.length) {
-        slideIndex = 1
-      } 
-      if (slideIndex == 1) {
-          t=5000;
-        }
-        // else if (slideIndex == 2 || slideIndex == 3) {
-        //   t=10000;
-        // }
-        else {
-          t=10000;
-        }
+        slideIndex = 1;
+      }
+      if (slideIndex == 1){t=5000;} 
+      else {t=10000;}
+      
       slides[slideIndex-1].style.display = "block"; 
       setTimeout(showSlides, t);
       limit = t;
-
       var timeCount =0;
       limit = limit/10;
       window.animation = setInterval(function(limit){
       timeCount++;
       var perc = 0;
       perc = perc + timeCount/(limit-1);
-      // console.log(perc);
      
       if (perc<99){
         $('.clockTimer').circleProgress({
@@ -145,13 +138,12 @@
       }
 
     },10, limit);
-
     }
    function timedRefresh(timeoutPeriod) {
      setTimeout("location.reload(true);",timeoutPeriod);
     }
 
-    window.onload = timedRefresh(34500);
+    window.onload = timedRefresh(54500);
   </script>
   <script>
     
